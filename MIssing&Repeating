@@ -1,0 +1,29 @@
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        //System.out.println("Try programiz.pro");
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=s.nextInt();
+        }
+        int p=(int)(n*(n+1))/2,x=0,sum=0;
+        outer:
+        for(int i=0;i<n;i++){
+          //  sum+=a[i];
+            for(int j=0;j<n;j++){
+                if(a[i]==a[j]&&i!=j){
+                   x=a[i];
+                   break outer;
+                }
+            }
+        }
+        for(int i=0;i<n;i++){
+            sum+=a[i];
+        }
+        
+        System.out.println("Missing:"+(p-(sum-x))+" Repeating:"+x);
+    }
+}
