@@ -1,0 +1,16 @@
+import java.util.*;
+public class IterativeFactorial{
+    static int Fact(int n){
+        int f=1;
+        while(n>0){
+            f*=n;
+            n--;
+        }
+        return f;
+    }
+    public static void main(String[] args){
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        System.out.print(Fact(n));
+    }
+}
