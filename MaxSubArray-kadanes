@@ -1,0 +1,22 @@
+import java.util.*;
+public class MaxSubArray{
+    public static void main(String[] args){
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=s.nextInt();
+        }
+        int gs=a[0],ls=0;
+        for(int i=0;i<n;i++){
+            ls+=a[i];
+            if(gs<ls){
+                gs=ls;
+            }
+            if(ls<0){
+                ls=0;
+            }
+        }
+        System.out.print(gs);
+    }
+}
