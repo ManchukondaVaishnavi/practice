@@ -1,0 +1,15 @@
+import java.util.*;
+public class GcdOrHcfBrute{
+    public static void main(String [] args){
+        Scanner s=new Scanner(System.in);
+        int m=s.nextInt();
+        int n=s.nextInt();
+        int x=Math.min(m,n);
+        for(int i=x;i>=1;i--){
+            if(m%i==0&&n%i==0){
+                System.out.print(i);
+                return;
+            }
+        }
+    }
+}
