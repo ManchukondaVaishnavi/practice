@@ -1,0 +1,14 @@
+import java.util.*;
+public class TrailingFactorial{
+    public static void main(String[] args){
+        int c=0;
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+       int pow=5,res=0;
+      while(n>=pow){
+           res=res+(n/pow);
+           pow*=5;
+       }
+       System.out.print(res);
+    }
+}
