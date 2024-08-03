@@ -1,0 +1,14 @@
+import java.util.*;
+public class Reverse{
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+      int n=s.nextInt();
+      int r=0;
+      while(n>0){
+         int x=n%10;
+         r=(r*10)+x;
+         n=n/10;
+      }
+      System.out.print(r);
+    }
+}
