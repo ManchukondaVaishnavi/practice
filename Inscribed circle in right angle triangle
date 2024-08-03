@@ -1,0 +1,11 @@
+import java.util.*;
+public class Incircle{
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+        int p=s.nextInt();
+        int b=s.nextInt();
+        int h=s.nextInt();
+       int r=(p+b-h)/2;
+       System.out.print((3.14*r*r));
+    }
+}
