@@ -1,0 +1,22 @@
+public class SumDigitsSingle{
+    public static int sum(int n){
+       int r=0;
+      while(n>0){
+         int x=n%10;
+         r=r+x;
+         n=n/10;
+      if(r>9&&n==0){
+        n=r;
+        r=0;
+      }
+     
+    }
+    return r;
+    }
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+      int n=s.nextInt();
+      
+      System.out.print(sum(n));
+    }
+}
