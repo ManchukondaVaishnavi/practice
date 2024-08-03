@@ -1,0 +1,10 @@
+import java.util.*;
+public class SortString{
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+        String st=s.next();
+        char a[]=st.toCharArray();
+        Arrays.sort(a);
+        System.out.print(Arrays.toString(a));
+    }
+}
