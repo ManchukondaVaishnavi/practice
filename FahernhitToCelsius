@@ -1,0 +1,9 @@
+import java.util.*;
+public class FahrenhitToCelsius{
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+      float f=s.nextFloat();
+    float c=(f-32)*((float)5/9);
+    System.out.print(c);
+    }
+}
