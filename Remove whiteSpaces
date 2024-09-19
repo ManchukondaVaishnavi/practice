@@ -1,0 +1,10 @@
+import java.util.*;
+public class Remove{
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+        String str=s.nextLine();
+        String ns="";
+    ns=str.replaceAll("\\s+","");
+    System.out.print(ns);
+    }
+}
