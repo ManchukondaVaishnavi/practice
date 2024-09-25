@@ -1,0 +1,13 @@
+import java.util.*;
+class Accountant{
+    int salary=10000;
+}
+class Bonus extends Accountant{
+    int bonus=5000;
+}
+public class Main{
+public static void main(String args[]){
+    Bonus b=new Bonus();
+    System.out.print(b.bonus+b.salary);
+}
+}
