@@ -1,0 +1,6 @@
+public class InstanceOfKeyword{
+    public static void main(String args[]){
+        InstanceOfKeyword obj=new InstanceOfKeyword();
+        System.out.print(obj instanceof InstanceOfKeyword);
+    }
+}
