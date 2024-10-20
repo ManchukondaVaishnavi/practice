@@ -1,0 +1,25 @@
+import java.util.*;
+class GenricClass<T>{
+    T a[];
+    GenricClass(T a[]){
+        this.a=a;
+    }
+    public static <T> T[] reverse(T b[]){
+        int j=b.length-1;
+        for(int i=0;i<j;i++){
+            T t=b[i];
+            b[i]=b[j];
+            b[j]=t;
+        }
+        return b;
+    }
+    
+}
+public class Main{
+   
+    public static void main(String args[]){
+        Integer x[]={10,20,30,40,50};
+        GenricClass g=new GenricClass(x);
+        System.out.print(Arrays.toString(g.reverse(x)));
+    }
+}
